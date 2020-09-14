@@ -1,0 +1,21 @@
+<ion-header>
+  <figure text-center padding>
+    <img src="assets/img/logo.png" />
+  </figure>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onRegister(email, password)">
+    <ion-item>
+      <ion-label>Awesome Label</ion-label>
+      <ion-input #email required type="text" placeholder="Awesome Input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Awesome Label</ion-label>
+      <ion-input #password required type="password" placeholder="Awesome Input"></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+  </form>
+</ion-content>

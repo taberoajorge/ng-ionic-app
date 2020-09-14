@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Hora de comparar!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          <input
+            type="file"
+            (change)="onUploadChange($event)"
+            accept=".png, .jpg, .jpeg, .pdf"
+          />
+          <img
+            *ngFor="let item of base64textString"
+            src="{{item}}"
+            alt=""
+            id="img"
+          />
+        </ion-col>
+        <ion-col size="6">
+          <input
+            type="file"
+            (change)="onUploadChange($event)"
+            accept=".png, .jpg, .jpeg, .pdf"
+          />
+          <img
+            *ngFor="let item of base64textString2"
+            src="{{item2}}"
+            alt=""
+            id="img"
+          />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button
+      class="ion-align-self-center"
+      fill="solid"
+      shape="round"
+      color="danger"
+      expand="full"
+    >
+      Compare!
+    </ion-button>
+  </form>
+
+ <ion-row class="ion-text-center">
+   <ion-col size="12">
+     <h3>Resultados</h3>
+   </ion-col>
+ </ion-row>
+
+</ion-content>

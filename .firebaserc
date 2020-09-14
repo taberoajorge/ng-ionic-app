@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ionic-ng": {
+      "hosting": {
+        "app": [
+          "login-ionic-ng"
+        ]
+      }
+    }
+  }
+}

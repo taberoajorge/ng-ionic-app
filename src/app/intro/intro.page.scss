@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+ion-content {
+  --background: var(--ion-color-primary-tint);
+  font-family: 'Open Sans', sans-serif;
+}
+ion-slides {
+  background-color: var(--ion-color-primary-tint);
+  height: 100%;
+  max-width: 800px;
+}
+.swiper-slide {
+  display: block;
+  margin-bottom: 64px;
+  background-color: white;
+}
+ion-slide > h1,
+h2 {
+  margin: 0 0 0 0;
+  color: var(--ion-color-primary);
+}
+ion-slide > p {
+  font-style: italic;
+  font-size: 22px;
+  padding: 1em 1em 1em 1em;
+}
+ion-slide > ion-icon {
+  color: var(--ion-color-success);
+  font-size: 48px;
+}
+ion-slide > ion-icon[name="close"] {
+  float: right;
+  color: var(--ion-color-primary);
+  font-size: 48px;
+}
+ion-slide > img {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 64px 0;
+}

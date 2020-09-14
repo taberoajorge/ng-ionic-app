@@ -1,0 +1,58 @@
+<ion-header>
+  <figure text-center padding>
+    <img src="assets/img/logo.png" />
+  </figure>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onLogin(email, password)">
+    <ion-label>Email:</ion-label>
+    <ion-item>
+      <ion-input
+        #email
+        required
+        type="text"
+        placeholder="Awesome Input"
+      ></ion-input>
+    </ion-item>
+    <ion-label>Password:</ion-label>
+    <ion-item>
+      <ion-input
+        #password
+        required
+        type="password"
+        placeholder="Awesome Input"
+      ></ion-input>
+    </ion-item>
+    <ion-button
+      type="submit"
+      fill="solid"
+      color="primary"
+      expand="block"
+      shape="round"
+    >
+      Iniciar Sesion
+    </ion-button>
+
+    <ion-row class="ion-text-center">
+      <ion-col  size="12">
+        <span>or</span>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row>
+    <ion-col>
+      <ion-button
+        (click)="onLoginGoogle(email, password)"
+        type="submit"
+        fill="solid"
+        color="danger"
+        expand="block"
+        shape="round"
+        size="smal"
+      >
+        Inicia sesion con Google
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
